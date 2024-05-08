@@ -16,4 +16,7 @@ Whether you're looking for your next binge-watch or seeking something new to exp
 * Web framework used: **Flask**.
 * Frontend done using **HTML** and **CSS**.
 
+### cosine similarity visualisation
+![COSINE_sim](https://github.com/ShopnoBanerjee/anime-recommendation-model/assets/158451331/1f51caae-c99a-4702-8e4b-f49eb1a041c1)
+
 ![pngegg (2)](https://github.com/ShopnoBanerjee/anime-recommendation-model/assets/158451331/c22e699c-ac16-4562-a709-84491dafba48)
