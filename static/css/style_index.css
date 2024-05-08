@@ -1,0 +1,110 @@
+/* style.css */
+
+/* Import body_anime font */
+@font-face {
+    font-family: 'body_anime';
+    src: url('assets/fonts/digitalstrip.bold-italic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'heading_anime';
+    src: url('assets/fonts/anime-ace.bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'robot_text';
+    src: url('assets/fonts/disposabledroid-bb.regular.ttf') format('truetype');
+}
+
+/* General Styles */
+body {
+    font-family: 'body_anime'; /* Use body_anime font for all text */
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/background.jpg'); /* Background image */
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Translucent white background */
+    z-index: -1; /* Behind other content */
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.9); /* Translucent white box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add background image */
+.box::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url('assets/box.png');
+    background-size: cover;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+h1, h2 {
+    font-family: 'heading_anime', sans-serif; /* Use heading_anime font for headings */
+    color: #333;
+    text-align: center;
+}
+
+h3,p {
+    font-family: 'robot_text', sans-serif; /* Use heading_anime font for headings */
+    color: #333;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'heading_anime', sans-serif; /* Use heading_anime font for buttons */
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+

@@ -1,0 +1,88 @@
+/* style.css */
+
+/* Import custom fonts */
+@font-face {
+    font-family: 'anime_font';
+    src: url('assets/fonts/digitalstrip.bold-italic.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'heading_anime';
+    src: url('assets/fonts/anime-ace.bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'pulp_font';
+    src: url('assets/fonts/commando.ttf') format('truetype');
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use Arial font for all text */
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/mob_wallpaper.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Align the container to the left */
+    align-items: center; /* Center align the container vertically */
+    height: 100vh;
+    margin-left: 50px; /* Adjust the margin to position the box */
+}
+
+.box {
+    background-color: rgba(221, 46, 46, 0.9); /* Translucent white box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 80px rgba(232, 48, 48, 0.5); /* Colored glow */
+    text-align: center;
+}
+
+h1 {
+    font-family: pulp_font;
+    font-weight: lighter;
+    color: #1b1919; /* Dark gray color for headings */
+}
+
+h2 {
+    font-family: pulp_font;
+    font-weight: lighter;
+    color: #c5b3b3; /* Dark gray color for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+h3{
+    font-family: anime_font;
+    font-size: large;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="submit"], input[type="button"] {
+    padding: 10px 20px;
+    background-color: #000; /* Black color for buttons */
+    color: #e3d9d9; /* White text color for buttons */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'heading_anime', sans-serif; /* Use customFont1 for buttons */
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+    background-color: #333; /* Darker color on hover */
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5); /* Increase checkbox size */
+    margin-right: 10px; /* Add spacing between checkboxes */
+}
+

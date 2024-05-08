@@ -1,0 +1,96 @@
+
+<!DOCTYpE html>
+<html lang="en">
+    <link rel="stylesheet" href="{{url_for('static',filename= 'css/style_index.css')}}">
+    <head>
+        <title>Anime Recommendation by yours truly</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                
+            <h1>Anime Recommendations by</h1>
+            <h1> your trusty computer</h1>
+            <p> select one anime you really like from the list</p>
+            <!-- <h3> "refresh": to refresh list & "submit" to get reccomendations</h3> -->
+            <!-- <h3> "submit" if you want reccomendations</h3> -->
+            
+                <form action="/submit" method="pOST">
+                    {% for title in titles %}
+                        <input type="radio" name="movie" value="{{ title }}">
+                        <span>{{ title }}</span><br><br>
+                    {% endfor %}
+                    <br>
+                    <input type="submit" value="submit">
+                </form>
+                
+                <form action="/" method="GET">
+                    <input type="submit" value="refresh">
+                </form>
+            </div>
+        </div>    
+    </body>
+</html> 
+
+<!-- index.html -->
+<!-- index.html -->
+
+
+
+
+
+
+
+<!-- <!DOCTYpE html>
+<html lang="en">
+    <link rel="stylesheet" href="{{url_for('static',filename= 'css/style.css')}}">
+<head>
+    <title>Anime Recommendation by yours truly</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Select one anime you really like:</h1>
+            <p>If you don't find any that you can refresh :)</p>
+            <form action="/submit" method="pOST">
+                {% for title in titles %}
+                    <input type="radio" name="movie" value="{{ title }}">
+                    <span>{{ title }}</span> <br>
+                {% endfor %}
+                <br>
+                <input type="submit" value="submit">
+                <br>
+                <input type="submit" value="refresh">
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!-- <!DOCTYpE html>
+<html lang="en">
+    <link rel="stylesheet" href="{{url_for('static',filename= 'css/style.css')}}">
+<head>
+    <title>Anime Recommendation by yours truly</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Select one anime you really like:</h1>
+            <p>If you don't find any that you can refresh :)</p>
+            <form action="/submit" method="pOST">
+                {% for title in titles %}
+                    <label>
+                        <input type="radio" name="movie" value="{{ title }}">
+                        <span>{{ title }}</span>
+                    </label>
+                {% endfor %}
+                <br>
+                <input type="submit" value="submit">
+                <br>
+                <input type="submit" value="refresh">
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->

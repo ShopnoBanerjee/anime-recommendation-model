@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="{{url_for('static',filename= 'css/style_result.css')}}">
+    <head>
+        <title>
+            Recommendations
+        </title>
+    </head>
+    <div class="container">
+    <div class = 'box'>
+    <body>
+        <h3>you selected:</h3>
+        <h1>{{ selected_title }}</h1>
+        <h3>I recommend you to watch:</h3>
+
+        {% for title in recs %}
+            <h2>{{ title }}</h2>
+        {% endfor %}
+        
+        <br>
+        <form action="/" method='GET'>
+            <input type="submit" value="RETRY">
+        </form>
+    </div>
+    </div>
+        
+
+    </body>
+</html>
