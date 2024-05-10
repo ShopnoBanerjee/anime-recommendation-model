@@ -11,7 +11,7 @@ Whether you're looking for your next binge-watch or seeking something new to exp
 
 * **Dataset** used: [https://www.kaggle.com/datasets/victorsoeiro/crunchyroll-animes-and-movies]
 * Analysis and cleaning of dataset done using **pandas** in **Jupyter Notebook**.
-* ```bag_of_words``` is created through Python implementation, on which we run our ML algorithm.
+* ```bag_of_words``` is created through Python implementation, on which we run our algorithm.
 * **Recommendations** are made by calculating **Cosine similarity scores**, and we return the top 5 from the list with the scores in ascending order.
 * Web framework used: **Flask**.
 * Frontend done using **HTML** and **CSS**.
